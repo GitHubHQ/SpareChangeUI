@@ -11,12 +11,12 @@ block content
       .main-content
         | Lead Ticker: 
         
-        input(id="textLead", type='text', name='Lead', style = 'margin-left:20px', placeholder = 'E.g. AAPL, GOOG, etc.')
+        input(id="textLead", type='text', name='Lead', style = 'margin-left:23px', placeholder = 'E.g. AAPL, GOOG, etc.')
         br
         br
         | Bass Ticker: 
         
-        input(id="textBass", type='text', name='Bass',style = 'margin-left:25px', placeholder = 'E.g. AAPL, GOOG, etc.')
+        input(id="textBass", type='text', name='Bass',style = 'margin-left:30px', placeholder = 'E.g. AAPL, GOOG, etc.')
         br
         br
         | Drums Ticker: 
@@ -33,6 +33,10 @@ block content
       var wordDrums = $("#textDrums").val();
       alert(wordLead +" "+ wordBass +" "+wordDrums);
 
+
+
+
+      //plays audio after mp3 created
       $(document).ready(function() {
       var audioElement = document.createElement('audio');
       audioElement.setAttribute('src', 'weed.mp3');
@@ -50,7 +54,6 @@ block content
       });
       });
       }
-    
 
 
 
@@ -58,6 +61,7 @@ block content
     footer
       p
         |Make Music From Your Favorite Stocks
+
       
 
 
